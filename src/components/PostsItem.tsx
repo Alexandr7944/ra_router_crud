@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card } from '../interfaces/Card';
 import { getTime } from './utils/getTime';
 
 type PostsItemProps = {

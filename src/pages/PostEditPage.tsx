@@ -1,10 +1,9 @@
 import PostEdit from '../components/PostEdit';
 import useFetching from '../hooks/useFetching';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 const PostEditPage = () => {
   const { postId } = useParams();
-  const navigate = useNavigate();
   
   const url = 'http://localhost:7070/posts/' + postId;
   const option = {
@@ -13,7 +12,7 @@ const PostEditPage = () => {
     }
   }
 
-  const {data, error, loading} = useFetching( url, option );
+  const {data} = useFetching( url, option );
   const post = data && !Array.isArray(data) && data.post;
 
   return (

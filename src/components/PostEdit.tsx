@@ -3,7 +3,6 @@ import PostsItem from './PostsItem'
 import { useNavigate } from 'react-router-dom'
 import { AiOutlineClose } from 'react-icons/ai';
 import { Card } from '../interfaces/Card';
-import CloseButton from './CloseButton';
 
 type PostEditProps = {
   post: Card
