@@ -13,7 +13,7 @@ const PostEdit: React.FC<PostEditProps> = ({ post }) => {
   const [postContent, setPostContent] = useState(post.content);
 
   const keepContent = (): void => {
-    if (postContent === post.content) return navigate('http://localhost:7070/posts');
+    if (postContent === post.content) return navigate('../ra_router_crud/posts');
 
     const url = 'http://localhost:7070/posts?id=' + post.id;
     const option = {
