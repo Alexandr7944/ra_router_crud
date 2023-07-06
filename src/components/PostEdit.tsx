@@ -27,7 +27,7 @@ const PostEdit: React.FC<PostEditProps> = ({ post }) => {
       }
     }
     fetch(url, option)
-      .then(() => navigate('http://localhost:7070/posts'));
+      .then(() => navigate('../ra_router_crud/posts'));
   }
 
   return (
