@@ -7,7 +7,7 @@ const CloseButton: React.FC = () => {
   return (
     <button
       className='close-button'
-      onClick={() => navigate('../ra_router_crud/posts')}
+      onClick={() => navigate('../')}
     >
       <AiOutlineClose size={30} />
     </button>

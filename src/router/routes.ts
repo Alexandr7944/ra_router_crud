@@ -5,8 +5,8 @@ import PostsPage from "../pages/PostsPage";
 
 
 export const routes = [
-  { path: '/ra_router_crud/posts', element: PostsPage },
-  { path: '/ra_router_crud/posts/new', element: NewPost },
-  { path: '/ra_router_crud/posts/:postId', element: PostPage },
-  { path: '/ra_router_crud/posts/edit/:postId', element: PostEditPage }
+  { path: '', element: PostsPage },
+  { path: 'new', element: NewPost },
+  { path: ':postId', element: PostPage },
+  { path: 'edit/:postId', element: PostEditPage }
 ]
